@@ -2,23 +2,18 @@ body {
     font-family: sans-serif;
   }
   
-  #title {
-    text-align: center;
-  }
-  
   .body-style {
     margin: 50px 50px;
+  }
+
+  .title {
+    text-align: center;
   }
   
   .text-input {
     margin-top: 16px;
   }
   
-  .text-input:hover {
-    background-color: rgba(115, 132, 168, 0.26);
-  }
-  
   .text-input-value {
     height: 20px;
   }
-  
