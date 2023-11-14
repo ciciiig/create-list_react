@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
+import ItemListForm from './components/ItemListForm';
 
 type ItemList = {
   id: string;
@@ -27,18 +28,10 @@ export default function App() {
       <hr />
       <p className="text-input-value">{textIputValue}</p>
 
-      <form onSubmit={handleSubmit} className='form'>
-        <div>
-          <label htmlFor='item'>Type it in: </label>
-          <input
-            value={textIputValue}
-            onChange={(e) => setTextIputValue(e.target.value)}
-            onFocus={(e) => e.target.select()}
-            type='text'
-            id='input' autoFocus />
-        </div>
-        <button className="text-input" type="submit">Add text input value</button>
-      </form>
+      <ItemListForm
+        handleSubmit={handleSubmit}
+        textIputValue={textIputValue}
+        setTextIputValue={setTextIputValue} />
 
       {itemList.length === 0 && <p>No Items</p>}
       <ol>
