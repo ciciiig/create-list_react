@@ -1,15 +1,16 @@
 import './App.css'
 import { useState } from 'react'
 import ItemListForm from './components/ItemListForm';
+import ItemListComponent from './components/ItemListComponent';
 
-type ItemList = {
+export type ItemListType = {
   id: string;
   value: string;
 }
 
 export default function App() {
-  const [textIputValue, setTextIputValue] = useState("")
-  const [itemList, setItemList] = useState<ItemList[]>([])
+  const [textIputValue, setTextIputValue] = useState("...")
+  const [itemList, setItemList] = useState<ItemListType[]>([])
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -22,7 +23,7 @@ export default function App() {
   }
 
   return (
-    <div className='app-container'>
+    <>
       <hr />
       <h1 className='title'>Hello</h1>
       <hr />
@@ -33,13 +34,8 @@ export default function App() {
         textIputValue={textIputValue}
         setTextIputValue={setTextIputValue} />
 
-      {itemList.length === 0 && <p>No Items</p>}
-      <ol>
-        {itemList.map((item) => {
-          return <li key={item.id}>{item.value}</li>
-        })}
-      </ol>
+      <ItemListComponent itemList={itemList} />
       <hr />
-    </div>
+    </>
   )
 }
