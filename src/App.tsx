@@ -1,41 +1,26 @@
-import './App.css'
-import { useState } from 'react'
-import ItemListForm from './components/ItemListForm';
-import ItemListComponent from './components/ItemListComponent';
-
-export type ItemListType = {
-  id: string;
-  value: string;
-}
+import './App.css';
+import { useState } from 'react';
+import { ItemListForm } from './components/ItemListForm';
+import { ItemListComponent } from './components/ItemListComponent';
+import { ItemListType } from './type.ts';
+import { BaseLayout } from "./components/BaseLayout/BaseLayout.tsx";
 
 export default function App() {
-  const [textIputValue, setTextIputValue] = useState("...")
-  const [itemList, setItemList] = useState<ItemListType[]>([])
+  const [textInputValue, setTextInputValue] = useState('...');
+  const [itemList, setItemList] = useState<ItemListType[]>([]);
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (!textIputValue) return
-    setItemList((currentItems) => {
-      return [...currentItems, { id: crypto.randomUUID(), value: textIputValue }]
-    })
-
-    document.getElementById('input')?.focus()
+  const getBackSomeValue = (value: string) => {
+    console.log(value);
   }
 
   return (
-    <>
-      <hr />
-      <h1 className='title'>Hello</h1>
-      <hr />
-      <p className="text-input-value">{textIputValue}</p>
-
-      <ItemListForm
-        handleSubmit={handleSubmit}
-        textIputValue={textIputValue}
-        setTextIputValue={setTextIputValue} />
-
-      <ItemListComponent itemList={itemList} />
-      <hr />
-    </>
+      <BaseLayout textInputValue={textInputValue} callbackFunction={getBackSomeValue}>
+          <ItemListForm
+              textInputValue={textInputValue}
+              setTextInputValue={setTextInputValue}
+              setItemList={setItemList}
+          />
+          <ItemListComponent itemList={itemList} />
+      </BaseLayout>
   )
 }
