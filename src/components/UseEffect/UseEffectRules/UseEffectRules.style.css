@@ -1,0 +1,8 @@
+.UseEffect-rules-container {
+    border: 1.5px dashed rgb(188, 3, 126);
+    padding-right: 5px;
+}
+
+.UseEffect-rules-container > h3 {
+    text-align: center;
+}

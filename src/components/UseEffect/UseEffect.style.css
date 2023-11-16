@@ -1,32 +1,27 @@
-.useState-container {
+.UseEffect-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     max-width: 14vw;
     padding: 5px;
-    border: 1.5px dashed rgb(55, 3, 188);
+    border: 1.5px dashed rgb(188, 3, 126);
     margin-right: 10px;
 }
 
-.useState-container > div {
+.UseEffect-container > div {
     width: 100%;
     font-size: clamp(0.5rem, 2.5vw, 2rem); 
     text-align: center;
-    margin-bottom: 10px;
 }
 
-.useState-container > button {
+.UseEffect-container > button {
     background-color: rgba(100, 100, 100, 0.6);
-}
-
-.fakeButton {
-    width: 100%;
-    margin-top: 10px;
 }
 
 .container {
     display: flex;
+    margin-top: 10px;
 }
 
 .rules {

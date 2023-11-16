@@ -1,5 +1,6 @@
 import './App.css'
-import { GeneralHookRules } from './components/GeneralHookRules/generalHookRules'
+import { GeneralHookRules } from './components/GeneralHookRules/GeneralHookRules'
+import { UseEffect } from './components/UseEffect/UseEffect'
 import { UseState } from './components/UseState/UseState'
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
     <>
       <GeneralHookRules />
       <UseState />
+      <UseEffect />
     </>
   )
 }
