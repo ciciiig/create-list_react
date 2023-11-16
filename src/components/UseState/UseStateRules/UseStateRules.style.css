@@ -1,0 +1,7 @@
+.useState-rules-container {
+    border: 1.5px dashed rgb(55, 3, 188);
+}
+
+.useState-rules-container > h3 {
+    text-align: center;
+}

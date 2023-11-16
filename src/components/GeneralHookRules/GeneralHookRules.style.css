@@ -1,0 +1,17 @@
+.general-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px dashed rgb(84, 235, 137);
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.general-container > ul > li {
+    font-size: clamp(0.5rem, 1.5vw, 1rem); ;
+}
+
+h3 {
+    margin: 10px 0 0 0;
+}
