@@ -1,5 +1,6 @@
 import './App.css'
 import { GeneralHookRules } from './components/GeneralHookRules/GeneralHookRules'
+import { UseCallback } from './components/UseCallback/UseCallback'
 import { UseContext } from './components/UseContext/UseContext'
 import { UseEffect } from './components/UseEffect/UseEffect'
 import { UseMemo } from './components/UseMemo/UseMemo'
@@ -15,7 +16,8 @@ export default function App() {
       {/* <UseEffect /> */}
       {/* <UseRef /> */}
       {/* <UseContext /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      {/* <UseCallback /> */}
     </>
   )
 }

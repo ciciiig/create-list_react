@@ -1,0 +1,30 @@
+.useCallback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 14vw;
+    padding: 5px;
+    border: 1.5px dashed rgb(188, 68, 3);
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.useCallback-container > input {
+    width: 50%;
+    text-align: center;
+}
+
+.useCallback-container > div {
+    width: 80%;
+    font-size: clamp(0.5rem, 2.5vw, 2rem); 
+    text-align: center;
+}
+
+.useCallback-container > button {
+    background-color: rgba(100, 100, 100, 0.6);
+}

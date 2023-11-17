@@ -1,0 +1,9 @@
+.useCallback-rules-container {
+    border: 1.5px dashed rgb(188, 68, 3);
+    padding-right: 5px;
+    width: 100%;
+}
+
+.useCallback-rules-container > h3 {
+    text-align: center;
+}
