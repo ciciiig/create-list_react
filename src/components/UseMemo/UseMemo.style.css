@@ -5,11 +5,26 @@
     align-items: center;
     max-width: 14vw;
     padding: 5px;
-    border: 1.5px dashed rgb(3, 188, 163);
+    border: 1.5px dashed rgb(182, 188, 3);
     margin-right: 10px;
 }
 
 .container {
     display: flex;
     margin-top: 10px;
+}
+
+.useMemo-container > input {
+    width: 50%;
+    text-align: center;
+}
+
+.useMemo-container > div {
+    width: 80%;
+    font-size: clamp(0.5rem, 2.5vw, 2rem); 
+    text-align: center;
+}
+
+.useMemo-container > button {
+    background-color: rgba(100, 100, 100, 0.6);
 }
