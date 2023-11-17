@@ -1,0 +1,9 @@
+.useContext-rules-container {
+    border: 1.5px dashed rgb(3, 188, 163);
+    padding-right: 5px;
+    width: 100%;
+}
+
+.useContext-rules-container > h3 {
+    text-align: center;
+}
