@@ -1,4 +1,5 @@
 import './App.css'
+import { CustomHook } from './components/CustomHook/CustomHook'
 import { GeneralHookRules } from './components/GeneralHookRules/GeneralHookRules'
 import { UseCallback } from './components/UseCallback/UseCallback'
 import { UseContext } from './components/UseContext/UseContext'
@@ -18,6 +19,7 @@ export default function App() {
       {/* <UseContext /> */}
       {/* <UseMemo /> */}
       {/* <UseCallback /> */}
+      {/* <CustomHook /> */}
     </>
   )
 }

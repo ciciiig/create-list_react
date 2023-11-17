@@ -1,0 +1,9 @@
+.customHook-rules-container {
+    border: 1.5px dashed rgb(200, 200, 200);
+    padding-right: 5px;
+    width: 100%;
+}
+
+.customHook-rules-container > h3 {
+    text-align: center;
+}
