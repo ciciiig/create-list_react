@@ -1,0 +1,9 @@
+.useMemo-rules-container {
+    border: 1.5px dashed rgb(182, 188, 3);
+    padding-right: 5px;
+    width: 100%;
+}
+
+.useMemo-rules-container > h3 {
+    text-align: center;
+}

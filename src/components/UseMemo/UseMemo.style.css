@@ -1,0 +1,15 @@
+.useMemo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 14vw;
+    padding: 5px;
+    border: 1.5px dashed rgb(3, 188, 163);
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+}

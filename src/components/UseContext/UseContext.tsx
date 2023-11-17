@@ -1,11 +1,11 @@
 import "./UseContext.style.css";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { Nav } from "./components/Nav";
 import { UseContextRules } from "./components/UseContextRules/UseContextRules";
 
 export const Context = React.createContext(0);
 
-export const UseContext = () => {
+export const UseContext: FC = () => {
     const num = 1;
 
     return (
